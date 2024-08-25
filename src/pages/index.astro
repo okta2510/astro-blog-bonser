@@ -13,7 +13,7 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  title: 'Boncser — Website ini dibuat sebagai wadah pemersatu para alumni dibawah almamater BONSER.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -23,30 +23,26 @@ const metadata = {
 
   <Hero
     actions={[
-      {
-        variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
-        target: '_blank',
-        icon: 'tabler:download',
-      },
-      { text: 'Learn more', href: '#features' },
+      // {
+      //   variant: 'primary',
+      //   text: 'Get template',
+      //   href: 'https://github.com/onwidget/astrowind',
+      //   target: '_blank',
+      //   icon: 'tabler:download',
+      // },
+      { text: 'Selengkapnya', href: '/about' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero.jpg', alt: 'AstroWind Hero Image' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white highlight"> Astro 4.0</span> + Tailwind CSS
+      <span class="hidden xl:inline">Sekilas tentang website</span>
+      <span class="text-accent dark:text-white highlight">Alumni Bonser</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 4.0
-        + Tailwind CSS.</span
-      >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      Website ini dibuat sebagai wadah pemersatu para alumni dibawah almamater BONSER.
+      Yang berfungsi sebagai media penyebaran informasi terkait perkembangan yang terjadi disekolah, kegiatan alumni ataupun komunitasnya, atau hal lain yang dapat bermanfaat bagi seluruh komunitas alumni Bonser itu sendiri dan juga diharapkan bisa bersinergi untuk kemajuan para siswa yang masih bersekolah saat ini.
+      Dengan mengusung semangat
     </Fragment>
   </Hero>
 
@@ -322,7 +318,7 @@ const metadata = {
                 `}
   /> -->
   <BlogLatestPosts
-    title="Find out more content in our Blog"
+    title="Temukan lebih banyak konten di Blog kami."
   />
 
   <!-- FAQs Widget ******************* -->

@@ -90,3 +90,7 @@
 .dd *:first-child {
   margin-top: 0;
 }
+
+.hero-image {
+  max-width: 100%!important;
+}
