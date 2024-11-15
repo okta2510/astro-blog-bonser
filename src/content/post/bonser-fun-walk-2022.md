@@ -1,9 +1,9 @@
 ---
-publishDate: 2023-08-12T00:00:00Z
+publishDate: 2023-02-23T00:00:00Z
 author: Riki
 title: Bonser Fun Walk 2022
 excerpt: STMN-3 Jakarta, dan STM PGRI 2 merupakan sekolah induk dari SMKN 5 dan SMK 8 PGRI. Sebagai sekolah yang sudah berdiri sejak tahun 1957, Tentunya sudah melahirkan banyak alumni yang tersebar di perusahaan dalam dan luar negeri. Termasuk mereka yang sudah meniti jalan menjadi wira usahawan di berbagai bidang usaha. 
-image: https://images.unsplash.com/photo-1516996087931-5ae405802f9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80
+image: ~/assets/images/Bonser-Fun-walk-382x250.png
 category: Info
 tags:
   - bonser

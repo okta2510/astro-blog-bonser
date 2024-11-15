@@ -1,0 +1,46 @@
+---
+import WidgetWrapper from '~/components/ui/WidgetWrapper.astro';
+import Headline from '~/components/ui/Headline.astro';
+import ItemGrid from '~/components/ui/ItemGrid.astro';
+import type { Features as Props } from '~/types';
+import Image from '~/components/common/Image.astro';
+
+const {
+  title = await Astro.slots.render('title'),
+  subtitle = await Astro.slots.render('subtitle'),
+  tagline = await Astro.slots.render('tagline'),
+  items = [],
+  columns = 4,
+  defaultIcon,
+
+  id,
+  isDark = false,
+  classes = {},
+  bg = await Astro.slots.render('bg'),
+} = Astro.props;
+
+---
+
+<WidgetWrapper id={id} isDark={isDark} containerClass={`max-w-7xl mx-auto ${classes?.container ?? ''}`} bg={bg}>
+  <Headline title={title} subtitle={subtitle} tagline={tagline} classes={classes?.headline as Record<string, string>} />
+    <div class="grid mx-auto lg:grid-cols-4 sm:grid-cols-3 gap-4 md:gap-6">
+      {items.map((item) => (
+        <div class="" >
+          <div class="flex text-center flex-row max-w-md rounded-lg shadow-[0_4px_30px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.1)] backdrop-blur border border-[#ffffff29] bg-white dark:bg-slate-900 p-2">
+            {item.media && item.media.src &&
+            <Image
+              src={item.media.src}
+              class="max-w-full lg:max-w-[900px] mx-auto sm:rounded-md bg-gray-400 dark:bg-slate-700"
+              widths={[400, 900]}
+              sizes="(max-width: 900px) 400px, 900px"
+              alt={''}
+              width={900}
+              height={900}
+              loading="eager"
+              decoding="async"
+            />}
+          </div>
+        </div>
+      ))}
+    </div>
+</WidgetWrapper>

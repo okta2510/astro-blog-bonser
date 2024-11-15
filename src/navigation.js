@@ -190,6 +190,9 @@ export const footerData = {
     // { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwid get/astrowind' },
   ],
   footNote: `
-  <span class="rtl:mr-0 mr-1 rtl:ml-1.5 float-left rtl:float-right"> Bonser 2024  · </span> Made by <a class="" href="https://oktaviardi.com/">  <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1 ml-1 rtl:mr-0 rtl:ml-1.5 float-right rtl:float-left rounded-sm" src="${logo}" alt="onWidget logo" loading="lazy"></img></a>
+  <span class="rtl:mr-0 mr-1 rtl:ml-1.5 float-left rtl:float-right"> Bonser 2024  · </span> Made by <a class="text-accent dark:text-white highlight font-bold" href="https://oktaviardi.com/">  Okta</a>
   `,
+  // footNote: `
+  // <span class="rtl:mr-0 mr-1 rtl:ml-1.5 float-left rtl:float-right"> Bonser 2024  · </span> Made by <a class="" href="https://oktaviardi.com/">  <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1 ml-1 rtl:mr-0 rtl:ml-1.5 float-right rtl:float-left rounded-sm" src="${logo}" alt="onWidget logo" loading="lazy"></img></a>
+  // `,
 };

@@ -93,6 +93,11 @@ export interface Image {
   alt?: string;
 }
 
+export interface Media {
+  src: string;
+  alt?: string;
+}
+
 export interface Video {
   src: string;
   type?: string;
@@ -139,6 +144,7 @@ export interface Item {
   classes?: Record<string, string>;
   callToAction?: CallToAction;
   image?: Image;
+  media?: Media;
 }
 
 export interface Price {
@@ -190,6 +196,13 @@ export interface CallToAction extends Omit<HTMLAttributes<'a'>, 'slot'> {
 }
 
 export interface ItemGrid {
+  items?: Array<Item>;
+  columns?: number;
+  defaultIcon?: string;
+  classes?: Record<string, string>;
+}
+
+export interface IconGrid {
   items?: Array<Item>;
   columns?: number;
   defaultIcon?: string;
